@@ -22,4 +22,30 @@ class JavaLangSystemTest {
         System.out.println("Nano second : " + (System.nanoTime() - startNanoTime));
     }
 
+    @Test
+    void test_printStreamCheck(){
+        byte b = 127;
+        short s = 32767;
+        System.out.print(b);
+        System.out.println();
+        System.out.print(s);
+        System.out.println();
+        System.out.println(b);
+        System.out.println(s);
+    }
+
+    @Test
+    void test_printNull(){
+        Object object = null;
+        System.out.println(object); // null
+        System.out.println(object + " is object's value"); // null is object's value
+        // new StringBuilder().append(obj).append(" is object's value)
+    }
+
+    @Test
+    void test_toString(){
+        Object object = null;
+        System.out.println(object.toString()); // NullPointerException!
+    }
+
 }
