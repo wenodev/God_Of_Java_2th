@@ -13,4 +13,13 @@ class JavaLangSystemTest {
     void test_systemPropertiesCheck_javaHome(){
         System.out.println(System.getenv("JAVA_HOME"));
     }
+
+    @Test
+    void test_numberMinMaxElapsedCheck(){
+        long startTime = System.currentTimeMillis();
+        long startNanoTime = System.nanoTime();
+        System.out.println("Milli second : " + (System.currentTimeMillis() - startTime));
+        System.out.println("Nano second : " + (System.nanoTime() - startNanoTime));
+    }
+
 }
