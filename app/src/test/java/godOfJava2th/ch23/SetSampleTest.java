@@ -23,6 +23,10 @@ class SetSampleTest {
         while (iterator.hasNext()){
             System.out.print(iterator.next() + " ");
         }
+
+        Queue<String> linkedList = new LinkedList<>();
+        List<String> list = new ArrayList<>();
+
     }
 
 }
