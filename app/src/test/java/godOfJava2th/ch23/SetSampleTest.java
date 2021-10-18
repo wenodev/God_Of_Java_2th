@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import java.util.*;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.assertj.core.api.Assertions.assertThat;
 
 class SetSampleTest {
     String[] cars = new String[]{
@@ -23,9 +23,26 @@ class SetSampleTest {
         while (iterator.hasNext()){
             System.out.print(iterator.next() + " ");
         }
+    }
 
-        Queue<String> linkedList = new LinkedList<>();
-        List<String> list = new ArrayList<>();
+    @Test
+    void test_listIterator(){
+        LinkedList<String> linkedList = new LinkedList<>();
+        linkedList.addFirst("c");
+        linkedList.addFirst("b");
+        linkedList.addFirst("a");
+
+        Iterator<String> iterator = linkedList.listIterator(1);
+        while(iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+    }
+
+    @Test
+    void test_descendingIterator(){
+        LinkedList<String> linkedList = new LinkedList<>();
+        linkedList.addFirst("b");
+        linkedList.addFirst("a");
 
     }
 
