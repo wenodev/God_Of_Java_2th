@@ -28,6 +28,10 @@ dependencies {
 
     // assertJ
     testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.6.1'
+
+    // mockito
+    testImplementation group: 'org.mockito', name: 'mockito-all', version: '1.9.5'
+
 }
 
 application {
