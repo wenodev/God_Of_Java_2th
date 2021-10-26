@@ -3,8 +3,7 @@ package godOfJava2th.ch24;
 import org.junit.jupiter.api.Test;
 
 import java.io.IOException;
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -34,6 +33,10 @@ class MapSampleTest {
         int[] numArray = {1,2,3,4,5};
         assertThat(Arrays.stream(numArray).reduce(0, (n1, n2) ->n1+n2))
                 .isEqualTo(15);
+    }
+
+    @Test
+    void test_map(){
     }
 
 }

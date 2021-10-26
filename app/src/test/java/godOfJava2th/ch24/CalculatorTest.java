@@ -2,6 +2,8 @@ package godOfJava2th.ch24;
 
 import org.junit.jupiter.api.Test;
 
+import java.util.Collection;
+
 import static org.assertj.core.api.Assertions.assertThat;
 
 class CalculatorTest {
