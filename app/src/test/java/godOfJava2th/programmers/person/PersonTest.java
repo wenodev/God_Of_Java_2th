@@ -1,4 +1,4 @@
-package godOfJava2th.practice.person;
+package godOfJava2th.programmers.person;
 
 import org.junit.jupiter.api.Test;
 

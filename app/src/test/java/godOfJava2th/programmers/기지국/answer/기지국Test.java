@@ -1,4 +1,4 @@
-package godOfJava2th.practice.기지국.answer;
+package godOfJava2th.programmers.기지국.answer;
 
 import org.junit.jupiter.api.Test;
 

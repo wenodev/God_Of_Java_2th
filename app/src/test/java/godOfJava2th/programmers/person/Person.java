@@ -1,6 +1,4 @@
-package godOfJava2th.practice.person;
-
-import org.mockito.cglib.core.Local;
+package godOfJava2th.programmers.person;
 
 import java.time.LocalDateTime;
 
