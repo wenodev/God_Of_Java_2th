@@ -65,4 +65,22 @@ class MapSampleTest {
         }
     }
 
+    /*
+        A : a
+        B : b
+        C : c
+     */
+    @Test
+    void test_checkHashMapEntry(){
+        HashMap<String, String> map = new HashMap<>();
+        map.put("A", "a");
+        map.put("B", "b");
+        map.put("C", "c");
+
+        Set<Map.Entry<String, String>> entries = map.entrySet();
+        for (Map.Entry<String, String> tempEntry :entries){
+            System.out.println(tempEntry.getKey() + " : " + tempEntry.getValue());
+        }
+    }
+
 }
