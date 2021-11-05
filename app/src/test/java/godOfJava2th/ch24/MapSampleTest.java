@@ -2,7 +2,6 @@ package godOfJava2th.ch24;
 
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
 import java.util.*;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -36,7 +35,34 @@ class MapSampleTest {
     }
 
     @Test
-    void test_map(){
+    void test_checkKeySet(){
+        HashMap<String, String> map = new HashMap<>();
+        map.put("A", "a");
+        map.put("B", "b");
+        map.put("C", "c");
+
+        Set<String> keySet = map.keySet();
+        for (String tempKey : keySet){
+            System.out.println(tempKey + " : " + map.get(tempKey));
+        }
+    }
+
+    @Test
+    void test_checkValues(){
+        HashMap<String, String> map = new HashMap<>();
+        map.put("A", "a");
+        map.put("B", "b");
+        map.put("C", "c");
+
+        Collection<String> values = map.values();
+        /*
+        value : a
+        value : b
+        value : c
+         */
+        for (String value : values){
+            System.out.println("value : " + value);
+        }
     }
 
 }
