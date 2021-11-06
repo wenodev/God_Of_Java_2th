@@ -25,9 +25,7 @@ public class RandomNumberStatistics {
     }
 
     public void putCurrentNumber(Integer tempNumber){
-        if (tempNumber == null) return;
-        System.out.println(tempNumber);
-        if (hashtable.contains(tempNumber)){
+        if (hashtable.containsKey(tempNumber)){
             hashtable.put(tempNumber, hashtable.get(tempNumber) + 1);
         }else{
             hashtable.put(tempNumber, 1);
@@ -38,7 +36,7 @@ public class RandomNumberStatistics {
         Set<Integer> integerSet  = hashtable.keySet();
         for (Integer integer : integerSet){
             if (integer % 10 - 1 ==0) System.out.println();
-            System.out.println(integer);
+            System.out.println(integer + " : " + hashtable.get(integer));
         }
     }
 

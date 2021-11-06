@@ -36,7 +36,7 @@ class MapSampleTest {
 
     @Test
     void test_checkKeySet(){
-        HashMap<String, String> map = new HashMap<>();
+        Map<String, String> map = new HashMap<>();
         map.put("A", "a");
         map.put("B", "b");
         map.put("C", "c");
