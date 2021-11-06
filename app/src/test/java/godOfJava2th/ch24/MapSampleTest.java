@@ -83,4 +83,17 @@ class MapSampleTest {
         }
     }
 
+    @Test
+    void test_checkContains(){
+        HashMap<String, String> map = new HashMap<>();
+        map.put("A", "a");
+        map.put("B", "b");
+        map.put("C", "c");
+
+        System.out.println(map.containsKey("A")); //true
+        System.out.println(map.containsKey("D")); // false
+        System.out.println(map.containsValue("a")); // true
+        System.out.println(map.containsValue("d")); // false
+    }
+
 }
